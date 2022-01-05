@@ -42,3 +42,14 @@ function numberToString(num) {
 }
 
 console.log(typeof numberToString(123));
+
+
+/* Конвертировать строку в число: "123" --> 123 */
+
+var stringToNumber = function(str) {
+    return parseInt(str);
+} 
+
+console.log(typeof stringToNumber('123'));
+
+
