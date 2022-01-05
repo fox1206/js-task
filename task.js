@@ -14,3 +14,22 @@ function capitalizeWord(word) {
 }
 
 console.log(capitalizeWord("maria"));
+
+
+/* определить какой век по году*/
+
+function century(year) {
+  if (Number.isInteger(year)) {
+    if(year % 100 == 0){
+      return year / 100;
+    }
+    else {
+      return Math.floor((year / 100 + 1));
+    }
+  }
+  else {
+    return 'not year';
+  }
+}
+
+console.log(century(2022));
