@@ -33,3 +33,12 @@ function century(year) {
 }
 
 console.log(century(2022));
+
+
+/* Конвертировать число в строку: 123 --> "123" */
+
+function numberToString(num) {
+  return num.toString();
+}
+
+console.log(typeof numberToString(123));
