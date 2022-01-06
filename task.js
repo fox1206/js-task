@@ -52,8 +52,29 @@ console.log(typeof stringToNumber('123'));
 /* Вернет число в двоичном формате */
 function toBinary(n){
   let bin = +(n.toString(2));
-  // console.log(typeof bin);
+  console.log(typeof bin);
+  
   return bin;
 }
 
-console.log(toBinary(12));
+function toBinary1(number){
+  let b = '';
+  let num = number;
+  while (num !== 0) {
+    bin = num % 2 + b;
+    num = Math.floor(num / 2);
+  }  
+  return b;
+}
+
+console.log(toBinary1(12));
+
+
+/* Создайте функцию, которая принимает целое число в качестве аргумента 
+и возвращает "Четное" для четных чисел или "Нечетное" для нечетных чисел. */
+function even_or_odd(number) {
+  let n = number;
+  return (n % 2 === 0) ? 'Even': 'Odd';
+}
+
+console.log(even_or_odd(21));
