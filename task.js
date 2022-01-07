@@ -117,3 +117,12 @@ function digits(n) {
 }
 
 console.log(digits(56999876666));
+
+
+/* Дано целое число или число с плавающей запятой, 
+найдите его противоположность */
+function opposite(number) {
+  return (number > 0) ? -number : Math.abs(number);
+}
+
+console.log(opposite(-20));
