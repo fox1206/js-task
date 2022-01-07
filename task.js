@@ -107,3 +107,13 @@ function areaLargestSquare(r) {
 }
 
 console.log(areaLargestSquare(5));
+
+
+/* Определите общее количество цифр в целом числе (n>=0), заданном в качестве входных данных для функции.
+1 --> 1 , 369 --> 3 */
+function digits(n) {
+  let num = String(n).length;
+  return Number(num);
+}
+
+console.log(digits(56999876666));
