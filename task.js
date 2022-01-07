@@ -138,3 +138,31 @@ function perimeterSequence(a,n) {
 }
 
 console.log(perimeterSequence(1, 3));
+
+
+/* Создать функцию, которая удаляет первый и последний символы строки.  */
+function removeChar(str){
+  // let newStr = str.slice(1, str.length-1);
+  // return newStr;
+  let text = '';
+  for (let i = 1; i < str.length-1; i++) {
+    text += str[i]; 
+  }
+  return text;
+ }
+
+ console.log(removeChar("Hello"));
+
+
+ /* Удалите пробелы из строки, а затем верните результирующую строку. */
+ function noSpace(x){    
+    let str = '';
+    for (let i = 0; i < x.length; i++) {
+      if(x.charCodeAt(i) != 32){
+        str += x[i];
+      }  
+    }
+    return str;
+  }
+
+  console.log(noSpace("Go to the hell"));
