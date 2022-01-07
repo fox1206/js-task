@@ -272,3 +272,13 @@ function removeChar(str){
   }
 
   console.log(updateLight('green'));
+
+
+  /* Вам даны два внутренних угла (в градусах) треугольника.
+  Напишите функцию для возврата 3-го числа. */
+  function otherAngle(a, b) {
+    const summa = 180;
+    return summa - (a + b);
+  }
+
+  console.log(otherAngle(60, 10));
