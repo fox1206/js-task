@@ -97,3 +97,13 @@ function fakeBin(x){
 }
 
 console.log(fakeBin(23561));
+
+
+/* Определите площадь наибольшего квадрата, 
+который может поместиться внутри круга радиусом r. */
+function areaLargestSquare(r) {
+  let s = Math.pow(r, 2) * 2;
+  return s;
+}
+
+console.log(areaLargestSquare(5));
