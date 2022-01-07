@@ -183,3 +183,16 @@ function removeChar(str){
   }
 
   console.log(simpleMultiplication(20));
+
+
+  /* Напишите функцию под названием repeat Str, 
+  которая повторяет заданную строку ровно n раз. */
+  function repeatStr (n, s) {
+    let str = '';
+    for (let i = 0; i < n; i++) {
+      str += s;
+    }
+    return str;
+  }
+
+  console.log(repeatStr(3, 'Mari'));
