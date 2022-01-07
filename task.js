@@ -252,3 +252,23 @@ function removeChar(str){
   }
 
   console.log(switchItUp(9));
+
+
+  /* Завершите функцию, которая принимает строку в качестве аргумента, 
+  представляющего текущее состояние источника света, и возвращает строку,
+  представляющую состояние, в которое должен перейти источник света.
+  Например, update_light("зеленый") должен возвращать "желтый". */
+  function updateLight(current) {
+    switch (current) {
+      case 'green':
+        return 'yellow';
+      case 'red':
+        return 'green';
+      case 'yellow':
+        return 'red';      
+      default:
+        return 'not red, green or yellow';
+    }
+  }
+
+  console.log(updateLight('green'));
