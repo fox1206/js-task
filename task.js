@@ -166,3 +166,11 @@ function removeChar(str){
   }
 
   console.log(noSpace("Go to the hell"));
+
+  /* Завершите решение так, чтобы оно возвращало значение true, 
+  если переданный первый аргумент (строка) заканчивается 2-м аргументом (также строкой). */
+  function solution(str, ending){
+    return str.endsWith(ending);
+  }
+
+  console.log(solution("abcd", "cdp"));
