@@ -126,3 +126,15 @@ function opposite(number) {
 }
 
 console.log(opposite(-20));
+
+
+/* Поиск периметра фигуры */
+function perimeterSequence(a,n) {
+  let p = 0;
+  for (let i = 0; i < n; i++) {
+    p += 4 * a;
+  }
+  return p;
+}
+
+console.log(perimeterSequence(1, 3));
