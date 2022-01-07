@@ -78,3 +78,22 @@ function even_or_odd(number) {
 }
 
 console.log(even_or_odd(21));
+
+
+/* Учитывая строку цифр, вы должны заменить любую цифру ниже 5 на "0", 
+а любую цифру 5 и выше - на "1". Верните результирующую строку. 1005981 ---> 0001110 */
+function fakeBin(x){
+  let str = String(x);
+  let result = '';
+  for(let i = 0; i <str.length; i++){
+    if(str.charCodeAt(i) >= 48 && str.charCodeAt(i) <= 52){
+      result += str[i] = '0';
+    }
+    else{
+      result += str[i] = '1';
+    }
+  }
+  return result;
+}
+
+console.log(fakeBin(23561));
