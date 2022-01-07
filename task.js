@@ -220,3 +220,35 @@ function removeChar(str){
   }
 
   console.log(finalGrade(0, 3));
+
+
+  /* Если указано число от 0 до 9, верните его прописью.
+  оператор switch */
+  function switchItUp(number){
+    switch (number) {
+      case 0:
+        return 'zero';
+      case 1:
+        return 'one';
+      case 2:
+        return 'two';
+      case 3:
+        return 'three';
+      case 4:
+        return 'four';
+      case 5:
+        return 'five';
+      case 6:
+        return 'six';
+      case 7:
+        return 'seven';
+      case 8:
+        return 'eight';
+      case 9:
+        return 'nine'; 
+      default:
+        return 'not number';   
+    }
+  }
+
+  console.log(switchItUp(9));
